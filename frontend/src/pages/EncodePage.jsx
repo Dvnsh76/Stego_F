@@ -71,7 +71,7 @@ export default function StegoSuiteEncode() {
     formData.append("scheme", scheme);
 
     try {
-      const response = await axios.post("/api/encode", formData, {
+      const response = await axios.post("https://stegosuite-295659720488.asia-south1.run.app/api/encode", formData, {
         responseType: "blob",
         headers: {
           'Content-Type': 'multipart/form-data'
